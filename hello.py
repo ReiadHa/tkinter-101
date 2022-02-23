@@ -6,7 +6,7 @@ window.title('Hello')
 window.geometry('300x300')
 label1 = tk.Label(
     window,
-    text = 'Hello\nTkinter!',
+    text = 'Hello \nTkinter!',
     bg='green',
     fg= 'yellow',
     font=("Helvetica", 30),
