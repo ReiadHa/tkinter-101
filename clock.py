@@ -3,7 +3,7 @@ from time import strftime
 
 window = tk.Tk()
 window.title('clock')
-window.geometry('300x100')
+window.geometry('300x50')
 
 label1 = tk.Label(
     window,

@@ -2,7 +2,7 @@ from time import sleep
 import tkinter as tk
 from threading import Timer
 
-
+#======================= lijst en window setup ==========
 window = tk.Tk()
 window.title('window test')
 counter = 6
@@ -14,6 +14,7 @@ sizeKleur = {
     '250x250' :'yellow',
     '300x300' :'black',
 }
+#========================functions hieronder===============================
 def test():
     global counter
     for s in sizeKleur:

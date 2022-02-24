@@ -1,8 +1,7 @@
-from itertools import count
 import random
 import tkinter as tk 
 
-
+#================================================ lijsten zitten hier onder===========================
 lijst = ['Gaming Pc','Gaming laptop','Gaming muis','Gaming Keyboard','4k scherm 32 inch']
 listt = """
 De Prijzen zijn:
@@ -12,12 +11,12 @@ Gaming muis
 Gaming Keyboard
 4k scherm 32 inch
 """
+#============================ tkinter en varibales setup ===========================================
 counter = 0
 window = tk.Tk()
 window.title('Grabbelton')
 window.config(bg='grey')
 button1 = tk.Button(text='klik hier om een prijs te grabbelen', bg="black", fg="white")
-
 stringvar = tk.StringVar(value=listt)
 window.geometry('300x300')
 label1 = tk.Label(
@@ -26,10 +25,7 @@ label1 = tk.Label(
 label1.config(textvariable=stringvar,bg='grey')
 label1.place(relx = 0.5,rely = 0.5,anchor = 'center',)
 
-
-
-
-
+#================================================functies hier onder=============================
 def click():
     global counter
     if len(lijst) != 0:
